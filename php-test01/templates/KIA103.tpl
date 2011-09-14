@@ -1,3 +1,4 @@
+<div id="main">
 &nbsp;
 <font style="color : #226; font-size : 20pt; font-weight : bold;">{$title_message}</font>
 <table border="0" cellpadding=0 cellspacing=0>
@@ -20,16 +21,8 @@
 	<input type="button" name="btn_save" id="btn_save" value=" Save " onclick="document.form1.submit();"></input>
 	&nbsp;&nbsp
 	<input type="button" name="btn_del" id="btn_del" value=" Delete " onclick="KIA103_del('{$PHP_DIR}/KIA107.php?id={$EA003_id}', 'Delete ok?');"></input>
-<!--
-	<A HREF="#" onclick="document.form1.submit();">
-	  <img src="{$IMAGE_DIR}/0312a1.png" border="0" alt="保存します。" style="border: 1px solid gray" />
-	</A>
-	<A HREF="#" onclick="EC002_del('{$PHP_DIR}/EA015.php?id={$EA003_id}' ,'{$APP_CONST->MSG_005}' ); ">
-	  <img src="{$IMAGE_DIR}/0312a2.png" border="0" " style="border: 1px solid gray" />
-	</A>
- -->
 {else}
-	<input type="button" name="btn_save" id="btn_save" value=" Save " onclick="document.form1.submit();"></input>
+	<input type="button" name="btn_save" id="btn_save" value=" Save " onclick="KIA103_add( '{$PHP_DIR}/KIA108.php', 'Add OK?');"></input>
 		&nbsp;&nbsp
 {/if}
 	 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -72,4 +65,5 @@
 
 <hr />
  &nbsp;<a href="{$PHP_DIR}/KIA101.php">Back</a>
-
+</div>
+<!-- End_Main -->

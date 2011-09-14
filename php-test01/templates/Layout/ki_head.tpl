@@ -8,8 +8,8 @@
     <link href="/SexyButtons/sexybuttons.css" media="screen" rel="Stylesheet" type="text/css" />
     <script src="{$PUBLIC_DIR}/javascripts/prototype.js" type="text/javascript"></script>
     <script src="{$PUBLIC_DIR}/javascripts/inputchk.js" type="text/javascript"></script>
-    <script src="{$PUBLIC_DIR}/javascripts/kake_form.js" type="text/javascript"></script> 
-    <script src="{$PUBLIC_DIR}/javascripts/kake.js" type="text/javascript"></script>
+    <script src="{$PUBLIC_DIR}/javascripts/kinen_form.js" type="text/javascript"></script> 
+    <script src="{$PUBLIC_DIR}/javascripts/kinen.js" type="text/javascript"></script>
 </head>
 <body style="font-family:Arial; margin: 0px; padding:0px;">
 <table border="0" width="100%" style="background: #CAF9CF" cellpadding=0 cellspacing=0>
@@ -26,8 +26,7 @@
 		</font>
 	</TD>
 	<TD class="table_colmn03_bottom02" align="right" valign=middle style="padding-right: 10px; width :300px">
-		|&nbsp;<a href="{$PHP_DIR}/KAA022.php?yymm={$smarty.session.ka_ken.KAA002}" style="color: blue;text-decoration:none;">Home</a>&nbsp;|
-		&nbsp;<a href="{$PHP_DIR}/KAA012.php" style="color: blue;text-decoration:none;">Master</a>&nbsp;|
+		|&nbsp;<a href="{$PHP_DIR}/KIA101.php" style="color: blue;text-decoration:none;">Home</a>&nbsp;|
 		{if $smarty.session.user.AUTH_TYP==9}
 			&nbsp;<a href="{$PHP_DIR}/YF001.php" style="color: blue;text-decoration:none;">Admin</a>&nbsp;|
 		{/if}
@@ -71,5 +70,4 @@
       <br> 
     </div>
 </div>
-	<!-- -->
-    <div id="main">
+

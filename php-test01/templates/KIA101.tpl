@@ -1,3 +1,4 @@
+<div id="main">
 <A HREF="{$PHP_DIR}/KIA103.php" style="color: blue;text-decoration:none;">| Add |</A><br />
 <br />
 <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -17,3 +18,5 @@
 {/foreach}
 <!-- Loop_End -->
 </table>
+</div>
+<!-- End_Main -->
