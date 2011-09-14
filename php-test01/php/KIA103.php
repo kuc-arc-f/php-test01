@@ -13,7 +13,7 @@ include_once("../libs/AppCom.php");
 
 	session_start();
 	
-	//MySmartyインスタンス生成
+	//
 	$smarty = new MySmarty();
 
 	$smarty->assign("title_message", $title_message );
