@@ -12,8 +12,6 @@ include_once("../libs/AppCom.php");
 	$smarty = new MySmarty();
 		
 	if(isset($_POST["txt_name"])){
-//var_dump( $_POST["txt_name"]);
-//exit;
 		$db     =new ComMysql();
 		$param["@001"] = $_POST["txt_name"];
 		$param["@002"] = $_POST["txt_code"];
@@ -26,10 +24,6 @@ include_once("../libs/AppCom.php");
 		  print $clsConst->MSG_ERROR_004;
 		  exit;
 		}
-		//flash_notice
-		//		$smarty->assign("title_message", $title_message );
-//		$smarty->assign("flash_notice", "Complete Add." );
-
 		header( "Location: ./KIA101.php");
 	}else{
 	 print( $clsConst->MSG_ERROR_001 );
