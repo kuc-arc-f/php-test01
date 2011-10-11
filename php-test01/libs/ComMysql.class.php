@@ -159,6 +159,29 @@ class ComMysql{
 
 		return $ret;
 	}	
+	//------------------------------------
+	// @calling
+	// @purpose
+	// @date
+	// @argment :
+	// @return
+	//------------------------------------
+	function Exec_NonQuery02( $sql){
+		$result = mysql_query("SET NAMES utf8;" , $this->Con );
+		$ret    = mysql_query( $sql ,$this->Con );
+		return $ret;
+	}	
+	//------------------------------------
+	// @calling
+	// @purpose
+	// @date
+	// @argment :
+	// @return
+	//------------------------------------
+	function Exec_NonQuery03( $sql){
+		$ret    = mysql_query( $sql ,$this->Con );
+		return $ret;
+	}	
 	
 	//------------------------------------
 	// @calling
